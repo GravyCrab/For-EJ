@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="BdayXIcon.gif">
+    <title>HAPPY BIRTHDAY!!</title>
+    <style>
+      *
+      {
+        scrollbar-width: none;
+      }
+
+      body
+      {
+        background: url("BdayBg.png");
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 1.5rem;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      section span
+      {
+        animation: animate 4s linear infinite;
+        background: transparent;
+        border-radius: 50%;
+        bottom: -50px;
+        box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+        position: absolute;
+      }
+
+      section span::before
+      {
+        content: "";
+        background: radial-gradient(#ffffff, transparent);
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.25) translate(-70%, -70%);
+      }
+
+      img
+      {
+        border: 8px solid;
+        border-color: #00e5e5 #009999 #009999 #00e5e5;
+        width: 12.5rem;
+        height: auto;
+        margin: 2rem 0rem 0rem 0rem;
+      }
+
+      .balloon_container
+      {
+        position: relative;
+        bottom: -800px;
+      }
+
+      .balloon
+      {
+        border-radius: 80%;
+        box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+        color: #ffffff;
+        display: inline-block;
+        font-family: cursive;
+        font-weight: bold;
+        width: 78px;
+        height: 88px;
+        position: relative;
+        transform-origin: bottom center;
+        transition: transform 0.5s ease;
+        z-index: 100;
+      }
+
+      .balloon1
+      {
+        animation: balloon1 forwards;
+        font-size: 58px;
+      }
+
+      .balloon2
+      {
+        animation: balloon2 forwards;
+        font-size: 48px;
+        top: -94px;
+      }
+
+      .balloon3
+      {
+        animation: balloon3 forwards;
+        font-size: 38px;
+        bottom: 187px;
+      }
+
+      .balloon4
+      {
+        animation: balloon4 forwards;
+        font-size: 32px;
+        bottom: 273px;
+      }
+
+      @keyframes balloon1
+      {
+        0%
+        {
+          transform: translateY(10vh) rotate(360deg);
+          opacity: 1;
+        }
+
+        10%
+        {
+          transform: translateY(-60vh) rotate(180deg);
+          opacity: 1;
+        }
+
+        100%
+        {
+          transform: translateY(-800px) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes balloon2
+      {
+        0%
+        {
+          transform: translateY(10vh) rotate(360deg);
+          opacity: 1;
+        }
+
+        10%
+        {
+          transform: translateY(-10vh) rotate(180deg);
+          opacity: 1;
+        }
+
+        100%
+        {
+          transform: translateY(-700px) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes balloon3
+      {
+        0%
+        {
+          transform: translateY(10vh) rotate(360deg);
+          opacity: 1;
+        }
+
+        10%
+        {
+          transform: translateY(-10vh) rotate(180deg);
+          opacity: 1;
+        }
+
+        100%
+        {
+          transform: translateY(-600px) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes balloon4
+      {
+        0%
+        {
+          transform: translateY(10vh) rotate(360deg);
+          opacity: 1;
+        }
+
+        10%
+        {
+          transform: translateY(-10vh) rotate(180deg);
+          opacity: 1;
+        }
+
+        100%
+        {
+          transform: translateY(-500px) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes animate
+      {
+        0%
+        {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+
+        99%
+        {
+          opacity: 1;
+        }
+
+        100%
+        {
+          transform: translateY(-1200%);
+          opacity: 0;
+        }
+      }
+
+      .balloon1:nth-child(1)
+      {
+        animation-duration: 3.0s;
+        background: #ac1e44;
+        left: 30px;
+      }
+
+      .balloon1:nth-child(1)::before
+      {
+        color: #ac1e44;
+      }
+
+      .balloon1:nth-child(2)
+      {
+        animation-duration: 4.1s;
+        background: #1ac1dd;
+        left: 15px;
+      }
+
+      .balloon1:nth-child(2)::before
+      {
+        color: #1ac1dd;
+      }
+
+      .balloon1:nth-child(3)
+      {
+        animation-duration: 5.2s;
+        background: #819c8b;
+        left: -5px;
+      }
+
+      .balloon1:nth-child(3)::before
+      {
+        color: #819c8b;
+      }
+
+      .balloon1:nth-child(4)
+      {
+        animation-duration: 6.3s;
+        background: #965a3e;
+        left: -15px;
+      }
+
+      .balloon1:nth-child(4)::before
+      {
+        color: #965a3e;
+      }
+
+      .balloon1:nth-child(5)
+      {
+        animation-duration: 4.4s;
+        background: #e79fc4;
+        left: -30px;
+      }
+
+      .balloon1:nth-child(5)::before
+      {
+        color: #e79fc4;
+      }
+
+      .balloon2:nth-child(1)
+      {
+        animation-duration: 5.7s;
+        background: #9632ff;
+        left: 33px;
+      }
+
+      .balloon2:nth-child(1)::before
+      {
+        color: #9632ff;
+      }
+
+      .balloon2:nth-child(2)
+      {
+        animation-duration: 4.1s;
+        background: #96ff32;
+        left: 9px;
+      }
+
+      .balloon2:nth-child(2)::before
+      {
+        color: #96ff32;
+      }
+
+      .balloon2:nth-child(3)
+      {
+        animation-duration: 4.1s;
+        background: #ff3296;
+        left: -17px;
+      }
+
+      .balloon2:nth-child(3)::before
+      {
+        color: #ff3296;
+      }
+
+      .balloon2:nth-child(4)
+      {
+        animation-duration: 4.1s;
+        background: #c8c8c8;
+        left: -30px;
+      }
+
+      .balloon2:nth-child(4)::before
+      {
+        color: #c8c8c8;
+      }
+
+      .balloon3:nth-child(1)
+      {
+        animation-duration: 3.0s;
+        background: #ff6464;
+        left: 61px;
+      }
+
+      .balloon3:nth-child(1)::before
+      {
+        color: #ff6464;
+      }
+
+      .balloon3:nth-child(2)
+      {
+        animation-duration: 3.1s;
+        background: #ffff64;
+        left: 39px;
+      }
+
+      .balloon3:nth-child(2)::before
+      {
+        color: #ffff64;
+      }
+
+      .balloon3:nth-child(3)
+      {
+        animation-duration: 5.2s;
+        background: #edcee2;
+        left: 22px;
+      }
+
+      .balloon3:nth-child(3)::before
+      {
+        color: #edcee2;
+      }
+
+      .balloon3:nth-child(4)
+      {
+        animation-duration: 6.3s;
+        background: #00ffff;
+      }
+
+      .balloon3:nth-child(4)::before
+      {
+        color: #00ffff;
+      }
+
+      .balloon3:nth-child(5)
+      {
+        animation-duration: 4.4s;
+        background: #0000ff;
+        left: -13px;
+      }
+
+      .balloon3:nth-child(5)::before
+      {
+        color: #0000ff;
+      }
+
+      .balloon3:nth-child(6)
+      {
+        animation-duration: 5.2s;
+        background: #ff141e;
+        left: -25px;
+      }
+
+      .balloon3:nth-child(6)::before
+      {
+        color: #ff141e;
+      }
+
+      .balloon3:nth-child(7)
+      {
+        animation-duration: 5.2s;
+        background: #32465a;
+        left: -40px;
+      }
+
+      .balloon3:nth-child(7)::before
+      {
+        color: #32465a;
+      }
+
+      .balloon3:nth-child(8)
+      {
+        animation-duration: 5.2s;
+        background: #b69cda;
+        left: -48px;
+      }
+
+      .balloon3:nth-child(8)::before
+      {
+        color: #b69cda;
+      }
+
+      .balloon4:nth-child(1)
+      {
+        animation-duration: 3.5s;
+        background: #ffffff;
+        color: #000000;
+        left: 32px;
+      }
+
+      .balloon4:nth-child(1)::before
+      {
+        color: #ffffff;
+      }
+
+      .balloon4:nth-child(2)
+      {
+        animation-duration: 3.1s;
+        background: #ffffff;
+        color: #000000;
+        left: 2px;
+      }
+
+      .balloon4:nth-child(2)::before
+      {
+        color: #ffffff;
+      }
+
+      .balloon4:nth-child(3)
+      {
+        animation-duration: 4.1s;
+        background: #ffffff;
+        color: #000000;
+        left: -26px;
+      }
+
+      .balloon4:nth-child(3)::before
+      {
+        color: #ffffff;
+      }
+
+      .balloon:hover
+      {
+        display: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <img src="BdayBoi.png"/>
+      <div class="balloon_container">
+        <div class="balloon balloon1">H</div>
+        <div class="balloon balloon1">A</div>
+        <div class="balloon balloon1">P</div>
+        <div class="balloon balloon1">P</div>
+        <div class="balloon balloon1">Y</div>
+      </div>
+
+      <div class="balloon_container">
+        <div class="balloon balloon2">1</div>
+        <div class="balloon balloon2">8</div>
+        <div class="balloon balloon2">T</div>
+        <div class="balloon balloon2">H</div>
+      </div>
+
+      <div class="balloon_container">
+        <div class="balloon balloon3">B</div>
+        <div class="balloon balloon3">I</div>
+        <div class="balloon balloon3">R</div>
+        <div class="balloon balloon3">T</div>
+        <div class="balloon balloon3">H</div>
+        <div class="balloon balloon3">D</div>
+        <div class="balloon balloon3">A</div>
+        <div class="balloon balloon3">Y</div>
+      </div>
+
+      <div class="balloon_container">
+        <div class="balloon balloon4">E</div>
+        <div class="balloon balloon4">J</div>
+        <div class="balloon balloon4">!</div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      function createBubble()
+      {
+        const section = document.querySelector("section");
+        const createElement = document.createElement("span");
+        var size = Math.random() * 60;
+
+        createElement.style.width = 20 + size + "px";
+        createElement.style.height = 20 + size + "px";
+        createElement.style.left = Math.random() * innerWidth + "px";
+        section.appendChild(createElement);
+      }
+
+      setTimeout(() =>
+      {
+        createElement.remove()
+      }, 4000);
+
+      setInterval(createBubble, 200);
+    </script>
+  </body>
+</html>
